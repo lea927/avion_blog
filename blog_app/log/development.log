@@ -1195,3 +1195,511 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 1.4ms | Allocations: 4837)
 
 
+Started GET "/articles/show/1" for 127.0.0.1 at 2021-07-15 23:41:59 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/articles/show/1"):
+  
+Started GET "/articles/1" for 127.0.0.1 at 2021-07-15 23:42:10 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 3031)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3095)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 18.0ms | Allocations: 10976)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Article:0x0000000137c4b4d0>):
+    1: <h1>Article</h1>
+    2: <h2><%= @article.title  %></h2>
+    3: <p> <%= @article.body %></p>
+  
+app/views/articles/show.html.erb:2
+Started GET "/articles/1" for 127.0.0.1 at 2021-07-15 23:42:26 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3956)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 1.1ms | Allocations: 5735)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-15 23:42:30 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3546)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 1.0ms | Allocations: 4601)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2021-07-15 23:42:34 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3548)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 1.0ms | Allocations: 4604)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:44:52 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2600)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 2664)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.8ms | Allocations: 3737)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <%# <td><%= article.name %></td> %>
+    16:           <td><a href="/articles/<%= @article.id %>"><%= @article.name %> </a><td>
+    17:           <td><%= article.body %></td>
+    18:           <td></td>
+    19:           
+  
+app/views/articles/index.html.erb:16
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:45:37 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2585)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2649)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms | Allocations: 3721)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <%# <td><%= article.name %></td> %>
+    16:           <td><a href="/articles/<%= @article.id %>"><%= @article.name %> </a><td>
+    17:           <td><%= @article.body %></td>
+    18:           <td></td>
+    19:           
+  
+app/views/articles/index.html.erb:16
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:46:30 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2558)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2622)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.6ms | Allocations: 3694)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           
+    16:           <td><a href="/articles/<%= @article.id %>"><%= @article.name %></a><td>
+    17:           <td><%= @article.body %></td>
+    18:           <td></td>
+    19:           <td></td>
+  
+app/views/articles/index.html.erb:16
+app/views/articles/index.html.erb:13
+Started GET "/articles/gdfs" for 127.0.0.1 at 2021-07-15 23:47:24 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"gdfs"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms | Allocations: 1216)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=gdfs):
+  
+app/controllers/articles_controller.rb:7:in `show'
+Started GET "/gdfs" for 127.0.0.1 at 2021-07-15 23:47:32 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/gdfs"):
+  
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:49:11 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2510)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2574)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.9ms | Allocations: 3645)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article)  %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:49:40 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2332)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2396)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.4ms | Allocations: 2756)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article)  %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:51:08 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 2574)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.3ms | Allocations: 3645)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article)  %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:51:31 +0800
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 6197)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6266)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.2ms | Allocations: 9157)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article)  %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:52:11 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2588)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2653)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.9ms | Allocations: 3845)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article) %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:52:41 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 2573)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.8ms | Allocations: 3644)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article) %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:53:25 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2573)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.7ms | Allocations: 3644)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article) %><td>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:54:51 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 2528)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 2593)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.1ms | Allocations: 3677)
+
+
+  
+ActionView::Template::Error (undefined method `body' for nil:NilClass):
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <%# <td><%= link_to @article.name, article_path(article) %><td> %>
+    16:           <td><%= @article.body %></td>
+    17:           <td></td>
+    18:           <td></td>
+    19:         </tr>
+  
+app/views/articles/index.html.erb:16
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:55:19 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 6710)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 1.4ms | Allocations: 7818)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:55:42 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4767)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 1.4ms | Allocations: 5867)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-15 23:55:44 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5519)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 6070)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:57:10 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2506)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2571)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.9ms | Allocations: 3650)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= @article.name %></td>
+    16:           <td></td>
+    17:         </tr>
+    18:     <% end %>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:58:29 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4783)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 1.8ms | Allocations: 5882)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-15 23:59:31 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 4870)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 1.9ms | Allocations: 5964)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2021-07-15 23:59:34 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3632)
+Completed 200 OK in 35ms (Views: 8.3ms | ActiveRecord: 2.4ms | Allocations: 8520)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-16 00:01:07 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 4870)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 1.6ms | Allocations: 5965)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-16 00:01:12 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2512)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2576)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms | Allocations: 3647)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12:   <tbody>
+    13:     <% @articles.each do |article| %>
+    14:         <tr>
+    15:           <td><%= link_to @article.name, article_path(article) %></td>
+    16:           <td><%= article.body %></td>
+    17:           <td></td>
+    18:         </tr>
+  
+app/views/articles/index.html.erb:15
+app/views/articles/index.html.erb:13
+Started GET "/" for 127.0.0.1 at 2021-07-16 00:04:07 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 4875)
+Completed 200 OK in 40ms (Views: 28.8ms | ActiveRecord: 1.5ms | Allocations: 5975)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-16 00:04:07 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1021)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4529)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.3ms | Allocations: 4928)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2021-07-16 00:04:11 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (8.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3650)
+Completed 200 OK in 25ms (Views: 8.6ms | ActiveRecord: 8.5ms | Allocations: 5456)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-16 00:04:15 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 566)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4686)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 5205)
+
+
