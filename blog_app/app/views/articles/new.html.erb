@@ -1,2 +1,9 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<h1>New article</h1>
+<%= form_with model: @article do |form| %>
+  <%= form.text_field :name, placeholder: "Blog Title" %>
+  <%= form.text_field :body, placeholder: "Blog content" %>
+
+  <%= form.submit %>
+
+
+<% end %>
