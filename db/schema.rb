@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2021_07_10_073512) do
-=======
 ActiveRecord::Schema.define(version: 2021_07_10_083316) do
->>>>>>> 83d186c9a3ca227a4c1aea18936043ded82ceb2e
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,25 +23,10 @@ ActiveRecord::Schema.define(version: 2021_07_10_083316) do
   end
 
   create_table "authors", force: :cascade do |t|
-<<<<<<< HEAD
-    t.string "first_name"
-    t.string "last_name"
-=======
     t.string "name"
->>>>>>> 83d186c9a3ca227a4c1aea18936043ded82ceb2e
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-<<<<<<< HEAD
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-=======
->>>>>>> 83d186c9a3ca227a4c1aea18936043ded82ceb2e
 end
