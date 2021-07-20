@@ -21,9 +21,14 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    @article = Article.find(params[:id])
   end
 
   def update
+    @article = Article.find(params[:id])
+    # raise params.inspect - prints out params on error page
+    @article.update!(article_params)
+    redirect_to article_path(@article)
   end
 
   def delete
