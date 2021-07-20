@@ -2745,3 +2745,61 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 1.4ms | Allocations: 4801)
 
 
+Started GET "/articles" for 127.0.0.1 at 2021-07-21 00:18:54 +0800
+  
+SyntaxError (/Users/leatinoso/codes/blog_app/app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+... only: [:show, :edit, :update :destroy]
+...                              ^
+):
+  
+app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+Started GET "/articles" for 127.0.0.1 at 2021-07-21 00:20:39 +0800
+  
+SyntaxError (/Users/leatinoso/codes/blog_app/app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+... only: [:show, :edit, :update :delete]
+...                              ^
+):
+  
+app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+app/controllers/articles_controller.rb:2: syntax error, unexpected ':', expecting ']'
+Started GET "/articles" for 127.0.0.1 at 2021-07-21 00:29:12 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 80.6ms | Allocations: 6219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.7ms | Allocations: 9707)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 23.1ms | Allocations: 10575)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-21 00:29:14 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3733)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 3.3ms | Allocations: 5616)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-21 00:29:15 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 453)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4543)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 1.0ms | Allocations: 5745)
+
+
