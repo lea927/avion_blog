@@ -1,0 +1,5 @@
+<%= form_with model: @article do |f| %>
+  <%= f.text_field :name, placeholder: "Blog Title" %>
+  <%= f.text_field :body, placeholder: "Blog content" %>
+  <%= f.submit %>
+<% end %>
