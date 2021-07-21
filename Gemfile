@@ -45,6 +45,8 @@ group :development do
 
   # Solargraph is a Ruby gem that provides intellisense features  
   gem 'solargraph'
+
+  gem 'rubocop', '~> 1.18', require: false
 end
 
 group :test do
