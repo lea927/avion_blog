@@ -1,24 +1,16 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app was a project I did as part of my Full-Stack Web Development Course in Avion School.
 
-Things you may want to cover:
+## Tools used
 
-* Ruby version
+- Ruby on Rails
+- Postgresql
+- Heroku
+- Visual Studio
 
-* System dependencies
+[Preview](https://avion-lea-blog.herokuapp.com/)
 
-* Configuration
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)

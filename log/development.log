@@ -3008,3 +3008,16 @@ Processing by ArticlesController#edit as HTML
 Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 1.9ms | Allocations: 6355)
 
 
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-21 23:09:12 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3912)
+Completed 200 OK in 156ms (Views: 32.2ms | ActiveRecord: 19.7ms | Allocations: 8942)
+
+
