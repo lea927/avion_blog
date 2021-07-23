@@ -12192,3 +12192,336 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 3.7ms | Allocations: 5356)
 
 
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:23:52 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (6.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 3.2ms | Allocations: 588)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 5524)
+Completed 200 OK in 204ms (Views: 24.9ms | ActiveRecord: 53.0ms | Allocations: 10541)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:23:55 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendered articles/_form.html.erb (Duration: 2.7ms | Allocations: 426)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 4662)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 1.1ms | Allocations: 5736)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:24:31 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 2.0ms | Allocations: 588)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1326)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 5519)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 1.6ms | Allocations: 7300)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:24:58 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 4.8ms | Allocations: 586)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 5530)
+Completed 200 OK in 47ms (Views: 36.9ms | ActiveRecord: 1.6ms | Allocations: 7316)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:26:38 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 57.5ms | Allocations: 3574)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 61.2ms | Allocations: 4312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 8417)
+Completed 200 OK in 87ms (Views: 78.9ms | ActiveRecord: 1.2ms | Allocations: 10198)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:27:11 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 2.2ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 2.4ms | Allocations: 651)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1391)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 5587)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 1.3ms | Allocations: 7373)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:27:36 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 2.7ms | Allocations: 643)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1380)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 5573)
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 1.3ms | Allocations: 7353)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:27:37 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  Rendered articles/_form.html.erb (Duration: 1.5ms | Allocations: 468)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4704)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 1.2ms | Allocations: 5778)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-24 04:27:49 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.6ms | Allocations: 120)
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 5351)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 1.9ms | Allocations: 5872)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 04:27:59 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.7ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4609)
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 1.0ms | Allocations: 5813)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 04:28:07 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 290)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4270)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.9ms | Allocations: 5356)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:28:08 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered articles/_form.html.erb (Duration: 1.3ms | Allocations: 467)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 721)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4703)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 1.1ms | Allocations: 5780)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:28:50 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.4ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 3.8ms | Allocations: 711)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1451)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 5647)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 1.0ms | Allocations: 7433)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:29:27 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 30.4ms | Allocations: 3423)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 33.8ms | Allocations: 4160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 8256)
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 0.9ms | Allocations: 10036)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:29:55 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.2ms | Allocations: 255)
+  Rendered articles/_form.html.erb (Duration: 2.2ms | Allocations: 713)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5659)
+Completed 200 OK in 25ms (Views: 18.7ms | ActiveRecord: 1.6ms | Allocations: 7445)
+
+
+Started PATCH "/articles/3" for 127.0.0.1 at 2021-07-24 04:30:11 +0800
+Processing by ArticlesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"name"=>"Greece: Ten Years Later", "body"=>"I was scared. As I packed my bags, all these worries darted through my mind: Would travel be just as fun and carefree as it was pre-COVID? Would people still be hosteling? What would that vibe be like? Would I even remember how to travel? Yup."}, "commit"=>"Update Article", "id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:28:in `update'
+  [1m[36mArticle Update (12.8ms)[0m  [1m[33mUPDATE "articles" SET "body" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["body", "I was scared. As I packed my bags, all these worries darted through my mind: Would travel be just as fun and carefree as it was pre-COVID? Would people still be hosteling? What would that vibe be like? Would I even remember how to travel? Yup."], ["updated_at", "2021-07-23 20:30:11.264008"], ["id", 3]]
+  ↳ app/controllers/articles_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:28:in `update'
+Redirected to http://127.0.0.1:3000/articles/3
+Completed 302 Found in 48ms (ActiveRecord: 25.4ms | Allocations: 3274)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 04:30:11 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4612)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.9ms | Allocations: 5812)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:30:16 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered articles/_form.html.erb (Duration: 1.7ms | Allocations: 511)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 765)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4747)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 1.3ms | Allocations: 5825)
+
+
+Started PATCH "/articles/3" for 127.0.0.1 at 2021-07-24 04:30:22 +0800
+Processing by ArticlesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"name"=>"Greece: Ten Years Later", "body"=>"I was scared. As I packed my bags, all these worries darted through my mind: Would travel be just as fun and carefree as it was pre-COVID? Would people still be hosteling? What would that vibe be like? Would I even remember how to travel?"}, "commit"=>"Update Article", "id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:28:in `update'
+  [1m[36mArticle Update (2.8ms)[0m  [1m[33mUPDATE "articles" SET "body" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["body", "I was scared. As I packed my bags, all these worries darted through my mind: Would travel be just as fun and carefree as it was pre-COVID? Would people still be hosteling? What would that vibe be like? Would I even remember how to travel?"], ["updated_at", "2021-07-23 20:30:22.951840"], ["id", 3]]
+  ↳ app/controllers/articles_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:28:in `update'
+Redirected to http://127.0.0.1:3000/articles/3
+Completed 302 Found in 14ms (ActiveRecord: 6.2ms | Allocations: 3107)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 04:30:22 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 290)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4270)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 1.2ms | Allocations: 5344)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-24 04:30:27 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.4ms | Allocations: 497)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4641)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 5162)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 04:30:35 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 116)
+  Rendered articles/_form.html.erb (Duration: 1.6ms | Allocations: 510)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 4744)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.9ms | Allocations: 5822)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-24 04:30:42 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 120)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 5345)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 1.3ms | Allocations: 5865)
+
+
