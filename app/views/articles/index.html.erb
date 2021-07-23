@@ -23,13 +23,12 @@
                         <div class="post-subtitle"><%= article.body.truncate(120, omission:'...') %></div>
                         <p class="post-meta">
                             Posted by
-                            <a href="#!">Writer</a>
-                            on September 24, 2021
+                            <a href="#!">Author</a>
+                            on <%= article.created_at.strftime('%m/%d/%Y') %>
                         </p>
                          <!-- Divider-->
                         <hr class="my-4" />
                       <% end %>
-                        
                     </div>
                    
                     <!-- Pager-->
