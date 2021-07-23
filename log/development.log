@@ -11509,3 +11509,205 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 1.3ms | Allocations: 6932)
 
 
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:51:20 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 2.1ms | Allocations: 255)
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 93.3ms | Allocations: 4990)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 115.5ms | Allocations: 9193)
+Completed 200 OK in 124ms (Views: 120.0ms | ActiveRecord: 18.5ms | Allocations: 10297)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:51:22 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 4416)
+Completed 200 OK in 29ms (Views: 17.2ms | ActiveRecord: 3.3ms | Allocations: 5787)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:51:30 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4187)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 1.0ms | Allocations: 5265)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:53:10 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1624)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 5827)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 1.3ms | Allocations: 6931)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:53:11 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.6ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 16.4ms | Allocations: 4519)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4583)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.5ms | Allocations: 5755)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<ActionView::Base:0x00000000028988>
+Did you mean?  @article):
+    10:                             <span class="meta">
+    11:                               Posted by
+    12:                             <a href="#!">Author</a>
+    13:                             on <%= article.created_at.strftime('%m/%d/%Y') %>
+    14:                             </span>
+    15:                         </div>
+    16:                     </div>
+  
+app/views/articles/show.html.erb:13
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:53:35 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4918)
+Completed 200 OK in 28ms (Views: 21.8ms | ActiveRecord: 1.3ms | Allocations: 6702)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:53:49 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.9ms | Allocations: 255)
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4937)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 1.2ms | Allocations: 6723)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:54:30 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.5ms | Allocations: 255)
+  Rendered articles/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 4919)
+Completed 200 OK in 29ms (Views: 23.2ms | ActiveRecord: 1.2ms | Allocations: 6699)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-24 03:54:33 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 120)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 5336)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 1.3ms | Allocations: 5857)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:54:35 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4197)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 5274)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:56:25 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (3.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 2.9ms | Allocations: 255)
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 4948)
+Completed 200 OK in 46ms (Views: 32.9ms | ActiveRecord: 3.1ms | Allocations: 6729)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-24 03:56:33 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 5345)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 1.2ms | Allocations: 5865)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2021-07-24 03:56:35 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4211)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.9ms | Allocations: 5289)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-24 03:56:42 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 7.6ms | Allocations: 555)
+  Rendered articles/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 856)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4833)
+Completed 200 OK in 26ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 5354)
+
+
