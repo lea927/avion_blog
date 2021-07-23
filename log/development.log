@@ -11049,3 +11049,392 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 1.6ms | Allocations: 6882)
 
 
+  [1m[36mArticle Load (11.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (3.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "articles"."name" FROM "articles"[0m
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (5.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (7.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:16:49 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1494)
+
+
+  
+NoMethodError (undefined method `truncate' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:17:37 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 9ms (Allocations: 3970)
+
+
+  
+NoMethodError (undefined method `truncate' for Article (call 'Article.connection' to establish a connection):Class
+Did you mean?  trust):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:19:02 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 6ms (Allocations: 3923)
+
+
+  
+NoMethodError (undefined method `body' for Article (call 'Article.connection' to establish a connection):Class):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:19:52 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 10ms (Allocations: 3475)
+
+
+  
+NameError (undefined local variable or method `article' for #<ArticlesController:0x0000000001d2e0>
+Did you mean?  @articles):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:21:12 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1410)
+
+
+  
+NoMethodError (undefined method `body' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:21:26 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1429)
+
+
+  
+NoMethodError (undefined method `body' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:22:30 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1408)
+
+
+  
+NoMethodError (undefined method `body' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:23:00 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1429)
+
+
+  
+NoMethodError (undefined method `body' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:23:41 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 1ms (Allocations: 907)
+
+
+  
+TypeError (exception object expected):
+  
+app/controllers/articles_controller.rb:10:in `raise'
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:24:28 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.2ms | Allocations: 122)
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 132.7ms | Allocations: 6485)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 147.2ms | Allocations: 10453)
+Completed 200 OK in 149ms (Views: 148.2ms | ActiveRecord: 30.2ms | Allocations: 11320)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:26:50 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1406)
+
+
+  
+NoMethodError (undefined method `body' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:10:in `show_excerpt'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:27:58 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.7ms | Allocations: 257)
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 4495)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 8677)
+Completed 200 OK in 45ms (Views: 19.4ms | ActiveRecord: 23.5ms | Allocations: 10142)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:28:58 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.4ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 5781)
+Completed 200 OK in 29ms (Views: 24.2ms | ActiveRecord: 1.5ms | Allocations: 6879)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:29:29 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1576)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 5770)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 1.2ms | Allocations: 6868)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:29:46 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.9ms | Allocations: 255)
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 5796)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 1.4ms | Allocations: 6900)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:30:09 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.9ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 5780)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 1.2ms | Allocations: 6878)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:30:56 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 5347)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5411)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.3ms | Allocations: 6486)
+
+
+  
+ActionView::Template::Error (undefined method `linkt_to' for #<ActionView::Base:0x00000000027358>
+Did you mean?  link_to):
+    24:                         </a> %>
+    25:                       <% @articles.each do |article| %>
+    26:                         <%= link_to article.name, article_path(article),class:"post-title"%>
+    27:                         <%= linkt_to article.body.truncate(50, omission:'...(read more)') %>
+    28:                         <p class="post-meta">
+    29:                             Posted by
+    30:                             <a href="#!">Writer</a>
+  
+app/views/articles/index.html.erb:27
+app/views/articles/index.html.erb:25
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:31:12 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 5790)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 1.4ms | Allocations: 6893)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:31:52 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 20.0ms | Allocations: 255)
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 28.5ms | Allocations: 1570)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 5764)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.8ms | Allocations: 6862)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:32:01 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 5783)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 1.6ms | Allocations: 6887)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:32:30 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.9ms | Allocations: 255)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 5781)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 1.3ms | Allocations: 6879)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 03:32:35 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 465)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4445)
+Completed 200 OK in 25ms (Views: 17.5ms | ActiveRecord: 2.2ms | Allocations: 5936)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:32:53 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.5ms | Allocations: 255)
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 5790)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 1.6ms | Allocations: 6893)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:33:05 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5781)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 1.4ms | Allocations: 6879)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:33:14 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.8ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 5795)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 1.2ms | Allocations: 6899)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:34:12 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.2ms | Allocations: 255)
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5778)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 1.4ms | Allocations: 6876)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:35:13 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.2ms | Allocations: 255)
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 5789)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 1.7ms | Allocations: 6893)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 03:35:28 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 5791)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 1.5ms | Allocations: 6895)
+
+
