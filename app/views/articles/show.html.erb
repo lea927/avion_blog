@@ -23,13 +23,12 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <p><%= @article.body %></p>
-                         <div class="mb-4"><%= link_to "Edit",  edit_article_path(@article), class: "btn btn-primary text-uppercase"%></div>
-             <div class="mb-4"><%= link_to "Delete", @article, :confirm => "Are you sure?", :method => :delete, class: "btn btn-primary text-uppercase"%></div>
-                </div>
                     </div>
                      <!-- Buttons-->
              <%# <div class="mb-4"><a class="btn btn-primary text-uppercase" href="#!">Edit</a></div> %>
-            
+             <div class="mb-4"><%= link_to "Edit",  edit_article_path(@article), class: "btn btn-primary text-uppercase"%></div>
+             <div class="mb-4"><%= link_to "Delete", @article, :confirm => "Are you sure?", :method => :delete, class: "btn btn-primary text-uppercase"%></div>
+                </div>
             </div>
             
         </article>
