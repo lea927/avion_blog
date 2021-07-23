@@ -1,14 +1,21 @@
-<h1>Blog App</h1>
+<%= render "navbar" %>
+<!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Unravel Blog</h1>
+                            <span class="subheading">Write just about anything under the sun.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<% if false %>
 <table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
   <tbody>
-  <%= render "navbar" %>
     <% @articles.each do |article| %>
         <tr>
           <td><%= link_to article.name, article_path(article) %></td>
@@ -18,6 +25,7 @@
     <% end %>
   </tbody>
 </table>
-<br>
-<%= link_to "New article", new_article_path %>
+
+<% end %>
+
 
