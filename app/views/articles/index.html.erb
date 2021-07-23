@@ -8,6 +8,7 @@
     </tr>
   </thead>
   <tbody>
+  <%= render "navbar" %>
     <% @articles.each do |article| %>
         <tr>
           <td><%= link_to article.name, article_path(article) %></td>
