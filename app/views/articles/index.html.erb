@@ -23,9 +23,8 @@
                             <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
                         </a> %>
                       <% @articles.each do |article| %>
-                         <%= link_to article.name, article_path(article),class:"post-title"%>   
-                         <br>       
-                          <%= link_to article.body,class:"post-subtitle"%>               
+                        <%= link_to article.name, article_path(article),class:"post-title"%>
+                        <div class="post-subtitle"><%= article.body %></div>
                         <p class="post-meta">
                             Posted by
                             <a href="#!">Writer</a>

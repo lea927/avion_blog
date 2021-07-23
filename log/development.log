@@ -8988,3 +8988,2064 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 47ms (Views: 42.0ms | ActiveRecord: 2.8ms | Allocations: 5612)
 
 
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:11:27 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.0ms | Allocations: 114)
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 112.1ms | Allocations: 4554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.1ms | Allocations: 8531)
+Completed 200 OK in 135ms (Views: 132.9ms | ActiveRecord: 36.2ms | Allocations: 8922)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:14:29 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.8ms | Allocations: 114)
+  [1m[36mArticle Load (6.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 37.4ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 93.7ms | Allocations: 5217)
+Completed 200 OK in 109ms (Views: 88.6ms | ActiveRecord: 6.2ms | Allocations: 5612)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 02:14:31 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (7.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.8ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 412)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4395)
+Completed 200 OK in 45ms (Views: 22.5ms | ActiveRecord: 10.0ms | Allocations: 5765)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2021-07-24 02:14:34 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  Rendered articles/_form.html.erb (Duration: 7.5ms | Allocations: 571)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 5024)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.9ms | Allocations: 6227)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2021-07-24 02:14:41 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4247)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 1.1ms | Allocations: 5324)
+
+
+  [1m[36mArticle Load (9.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArticle Update (0.9ms)[0m  [1m[33mUPDATE "articles" SET "body" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["body", "Due to wanting to live closer to the city centre, I moved from my house in second year to a flat in the city centre for third year. "], ["updated_at", "2021-07-23 18:16:36.476109"], ["id", 4]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArticle Update (9.0ms)[0m  [1m[33mUPDATE "articles" SET "body" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["body", "Due to wanting to live closer to the city centre, I moved from my house in second year to a flat in the city centre for third year. Moving back to Liverpool was great; I felt like I was coming home, much to my parents’ displeasure!  For the first week back, I worked a few days for the university in my job as an Ambassador, showing potential new students round while becoming reacquainted with the campus myself. When lectures restarted, it seemed like summer had disappeared in a matter of minutes! However, I was eager to get learning again and looked forward to seminars and lectures on the books and topics I had been researching over the summer.  Students from older years had warned me about third year being pretty scary, so I had prepared well and really enjoyed the first lectures from my new modules. Reconnecting with my societies was doubly fun, being the President of Combined Honours for the year meant lots of summer preparation for our first social – which was a big hit! Furthermore, as a member of the dance society "], ["updated_at", "2021-07-23 18:17:52.529862"], ["id", 4]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:18:25 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.7ms | Allocations: 255)
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 5942)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 2.1ms | Allocations: 7046)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:23:07 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1575)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 5775)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 1.5ms | Allocations: 6874)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:23:29 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.2ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1578)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 5778)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 1.2ms | Allocations: 6877)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:24:25 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1575)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 5772)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 1.6ms | Allocations: 6871)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:25:18 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 3.5ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 1573)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 5779)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 1.5ms | Allocations: 6878)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:25:20 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 5091)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 1.3ms | Allocations: 5484)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:25:23 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5072)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 1.1ms | Allocations: 5463)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:25:37 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  [1m[36mArticle Load (2.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1574)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 5774)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 2.7ms | Allocations: 6878)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:25:50 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1576)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 5776)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 1.8ms | Allocations: 6875)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:26:08 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.2ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1578)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 5775)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 1.5ms | Allocations: 6873)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:26:31 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1281)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "navbar" %>
+<!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Unravel Blog</h1>
+                            <span class="subheading">Write just about anything under the sun.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                    <%# <a href="post.html">
+                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        </a> %>
+                      <% @articles.each do |article| %>
+                         <%= link_to article.name, article_path(article),class:"post-title"%>
+                        <%= article.body,class:"post-subtitle" %>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Writer</a>
+                            on September 24, 2021
+                        </p>
+                         <!-- Divider-->
+                        <hr class="my-4" />
+                      <% end %>
+                        
+                    </div>
+                   
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+):
+1:    <%= render "navbar" %>
+2:    <!-- Page Header-->
+3:            <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+4:                <div class="container position-relative px-4 px-lg-5">
+5:                    <div class="row gx-4 gx-lg-5 justify-content-center">
+6:                        <div class="col-md-10 col-lg-8 col-xl-7">
+7:                            <div class="site-heading">
+8:                                <h1>Unravel Blog</h1>
+9:                                <span class="subheading">Write just about anything under the sun.</span>
+10:                            </div>
+11:                        </div>
+12:                    </div>
+13:                </div>
+14:            </header>
+15:    <!-- Main Content-->
+16:            <div class="container px-4 px-lg-5">
+17:                <div class="row gx-4 gx-lg-5 justify-content-center">
+18:                    <div class="col-md-10 col-lg-8 col-xl-7">
+19:                        <!-- Post preview-->
+20:                        <div class="post-preview">
+21:                        <%# <a href="post.html">
+22:                                <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+23:                                <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+24:                            </a> %>
+25:                          <% @articles.each do |article| %>
+26:                             <%= link_to article.name, article_path(article),class:"post-title"%>
+27:                            <%= article.body,class:"post-subtitle" %>
+28:                            <p class="post-meta">
+29:                                Posted by
+30:                                <a href="#!">Writer</a>
+31:                                on September 24, 2021
+32:                            </p>
+33:                             <!-- Divider-->
+34:                            <hr class="my-4" />
+35:                          <% end %>
+36:                            
+37:                        </div>
+38:                       
+39:                        <!-- Pager-->
+40:                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+41:                    </div>
+42:                </div>
+43:            </div>
+  
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:26:52 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (5.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1578)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 5781)
+Completed 200 OK in 32ms (Views: 24.3ms | ActiveRecord: 5.9ms | Allocations: 6884)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:28:23 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1568)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: d2fd562a26bd189b019b
+Version: webpack 4.46.0
+Time: 4176ms
+Built at: 07/24/2021 2:28:28 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-84902dc5bd16d67a6c71.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-84902dc5bd16d67a6c71.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-84902dc5bd16d67a6c71.js js/application-84902dc5bd16d67a6c71.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 702 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5615.2ms | Allocations: 6975)
+Completed 200 OK in 5622ms (Views: 5618.0ms | ActiveRecord: 1.5ms | Allocations: 8079)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:29:01 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.5ms | Allocations: 255)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 5757)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 1.3ms | Allocations: 6855)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:29:24 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.8ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1575)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5769)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 1.2ms | Allocations: 6868)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:30:33 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.2ms | Allocations: 255)
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 5769)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 2.0ms | Allocations: 6873)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:30:54 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5767)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 1.1ms | Allocations: 6871)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:31:21 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1560)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 5754)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 1.5ms | Allocations: 6852)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:31:41 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.0ms | Allocations: 255)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 5755)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 1.3ms | Allocations: 6853)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:31:42 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1092)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 5069)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 2.0ms | Allocations: 5462)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:31:58 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1210)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1275)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2351)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "navbar" %>
+<!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Unravel Blog</h1>
+                            <span class="subheading">Write just about anything under the sun.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                    <%# <a href="post.html">
+                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        </a> %>
+                      <% @articles.each do |article| %>
+                        <h2><%= link_to article.name, article_path(article)%></h2>
+                        <h3><%= article.body,class:"post-subtitle" %></h3>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Writer</a>
+                            on September 24, 2021
+                        </p>
+                         <!-- Divider-->
+                        <hr class="my-4" />
+                      <% end %>
+                        
+                    </div>
+                   
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+):
+1:    <%= render "navbar" %>
+2:    <!-- Page Header-->
+3:            <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+4:                <div class="container position-relative px-4 px-lg-5">
+5:                    <div class="row gx-4 gx-lg-5 justify-content-center">
+6:                        <div class="col-md-10 col-lg-8 col-xl-7">
+7:                            <div class="site-heading">
+8:                                <h1>Unravel Blog</h1>
+9:                                <span class="subheading">Write just about anything under the sun.</span>
+10:                            </div>
+11:                        </div>
+12:                    </div>
+13:                </div>
+14:            </header>
+15:    <!-- Main Content-->
+16:            <div class="container px-4 px-lg-5">
+17:                <div class="row gx-4 gx-lg-5 justify-content-center">
+18:                    <div class="col-md-10 col-lg-8 col-xl-7">
+19:                        <!-- Post preview-->
+20:                        <div class="post-preview">
+21:                        <%# <a href="post.html">
+22:                                <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+23:                                <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+24:                            </a> %>
+25:                          <% @articles.each do |article| %>
+26:                            <h2><%= link_to article.name, article_path(article)%></h2>
+27:                            <h3><%= article.body,class:"post-subtitle" %></h3>
+28:                            <p class="post-meta">
+29:                                Posted by
+30:                                <a href="#!">Writer</a>
+31:                                on September 24, 2021
+32:                            </p>
+33:                             <!-- Divider-->
+34:                            <hr class="my-4" />
+35:                          <% end %>
+36:                            
+37:                        </div>
+38:                       
+39:                        <!-- Pager-->
+40:                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+41:                    </div>
+42:                </div>
+43:            </div>
+  
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:32:15 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.4ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 5766)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 1.2ms | Allocations: 6870)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:32:33 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.1ms | Allocations: 255)
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 5758)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 1.1ms | Allocations: 6857)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:35:24 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.7ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1638)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 5831)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 1.5ms | Allocations: 6929)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:35:53 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.4ms | Allocations: 255)
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5834)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 1.9ms | Allocations: 6933)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:35:55 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 5101)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 1.4ms | Allocations: 5493)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:35:56 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 114)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 5103)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 1.5ms | Allocations: 5495)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:37:12 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 5840)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 1.5ms | Allocations: 6943)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:37:23 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.9ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1640)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 5833)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 1.5ms | Allocations: 6931)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:37:31 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 2.2ms | Allocations: 255)
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1636)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 5829)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 1.9ms | Allocations: 6927)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:37:49 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.6ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 5830)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 1.2ms | Allocations: 6930)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:38:17 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.6ms | Allocations: 255)
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 5856)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 1.2ms | Allocations: 6961)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:39:03 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.4ms | Allocations: 255)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 5841)
+Completed 200 OK in 71ms (Views: 67.6ms | ActiveRecord: 1.5ms | Allocations: 6941)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:39:12 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 2.0ms | Allocations: 255)
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 5841)
+Completed 200 OK in 52ms (Views: 45.3ms | ActiveRecord: 2.3ms | Allocations: 6940)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:41:32 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.9ms | Allocations: 255)
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 1576)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 5771)
+Completed 200 OK in 90ms (Views: 86.7ms | ActiveRecord: 0.9ms | Allocations: 6869)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:41:34 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 120)
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 5087)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 2.3ms | Allocations: 5480)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:45:00 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.9ms | Allocations: 114)
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 76d89368f4e7b4d0cf57
+Version: webpack 4.46.0
+Time: 4006ms
+Built at: 07/24/2021 2:45:06 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6e9d859bc048d0f4ce3f.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-6e9d859bc048d0f4ce3f.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6e9d859bc048d0f4ce3f.js js/application-6e9d859bc048d0f4ce3f.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 702 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5355.2ms | Allocations: 6253)
+Completed 200 OK in 5361ms (Views: 5354.6ms | ActiveRecord: 1.5ms | Allocations: 6644)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:46:59 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 114)
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 333ad7cdc797d7788043
+Version: webpack 4.46.0
+Time: 4054ms
+Built at: 07/24/2021 2:47:04 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6c9c3cde95d52c7e9872.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-6c9c3cde95d52c7e9872.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6c9c3cde95d52c7e9872.js js/application-6c9c3cde95d52c7e9872.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 702 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5394.7ms | Allocations: 6253)
+Completed 200 OK in 5396ms (Views: 5393.5ms | ActiveRecord: 1.6ms | Allocations: 6644)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:48:13 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.6ms | Allocations: 114)
+  [1m[36mArticle Load (2.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: b2851290178c158443f0
+Version: webpack 4.46.0
+Time: 4094ms
+Built at: 07/24/2021 2:48:19 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c3fefb78437210d8ef38.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-c3fefb78437210d8ef38.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c3fefb78437210d8ef38.js js/application-c3fefb78437210d8ef38.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 702 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5425.9ms | Allocations: 6285)
+Completed 200 OK in 5429ms (Views: 5423.9ms | ActiveRecord: 2.7ms | Allocations: 6677)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:48:57 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 114)
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: fe698f8b6b0b2010a7e4
+Version: webpack 4.46.0
+Time: 4238ms
+Built at: 07/24/2021 2:49:03 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3d6132835843365d4951.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-3d6132835843365d4951.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3d6132835843365d4951.js js/application-3d6132835843365d4951.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 701 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5546.9ms | Allocations: 6276)
+Completed 200 OK in 5548ms (Views: 5546.5ms | ActiveRecord: 1.1ms | Allocations: 6667)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:49:54 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.4ms | Allocations: 114)
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: d7c3a0a4c5542bdafbe8
+Version: webpack 4.46.0
+Time: 4007ms
+Built at: 07/24/2021 2:49:59 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fed887cca95acbc8e058.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-fed887cca95acbc8e058.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fed887cca95acbc8e058.js js/application-fed887cca95acbc8e058.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 701 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5397.8ms | Allocations: 6258)
+Completed 200 OK in 5400ms (Views: 5397.6ms | ActiveRecord: 1.4ms | Allocations: 6649)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:50:20 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.6ms | Allocations: 114)
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 86178ff63e2ee4b4e389
+Version: webpack 4.46.0
+Time: 4021ms
+Built at: 07/24/2021 2:50:25 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a1b73bdd55dae01747ae.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-a1b73bdd55dae01747ae.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a1b73bdd55dae01747ae.js js/application-a1b73bdd55dae01747ae.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 701 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5309.0ms | Allocations: 6256)
+Completed 200 OK in 5311ms (Views: 5307.8ms | ActiveRecord: 2.0ms | Allocations: 6648)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:51:30 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 114)
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 201489b637714fea9f2a
+Version: webpack 4.46.0
+Time: 4079ms
+Built at: 07/24/2021 2:51:36 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-aa087b0c8f8d8d4dbe24.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-aa087b0c8f8d8d4dbe24.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-aa087b0c8f8d8d4dbe24.js js/application-aa087b0c8f8d8d4dbe24.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 701 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5435.6ms | Allocations: 6262)
+Completed 200 OK in 5439ms (Views: 5435.0ms | ActiveRecord: 1.6ms | Allocations: 6654)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:51:56 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 257874aea6104c03b8dd
+Version: webpack 4.46.0
+Time: 4051ms
+Built at: 07/24/2021 2:52:01 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-49cbd2ac9e4e018103dd.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-49cbd2ac9e4e018103dd.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-49cbd2ac9e4e018103dd.js js/application-49cbd2ac9e4e018103dd.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 701 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5264.8ms | Allocations: 6321)
+Completed 200 OK in 5266ms (Views: 5264.0ms | ActiveRecord: 1.3ms | Allocations: 6712)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2021-07-24 02:52:07 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (8.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:44:in `find_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.5ms | Allocations: 120)
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 4399)
+Completed 200 OK in 36ms (Views: 18.3ms | ActiveRecord: 8.2ms | Allocations: 5601)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:52:37 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 0.3ms | Allocations: 114)
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1095)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/leatinoso/codes/blog_app/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/stylesheets/application.scss 1:9      root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/stylesheets/application.scss 1:9       root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 6b1db4bdfd92ec9d8ceb
+Version: webpack 4.46.0
+Time: 4029ms
+Built at: 07/24/2021 2:52:42 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d23a0d8c4a398e08836c.js   1.41 MiB  application  [emitted] [immutable]  application
+js/application-d23a0d8c4a398e08836c.js.map   1.51 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d23a0d8c4a398e08836c.js js/application-d23a0d8c4a398e08836c.js.map
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 443 bytes {application} [built]
+[./app/frontend/packs/application.js] 734 bytes {application} [built]
+[./app/frontend/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/stylesheets/application.scss 701 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5389.6ms | Allocations: 6285)
+Completed 200 OK in 5391ms (Views: 5389.1ms | ActiveRecord: 1.1ms | Allocations: 6678)
+
+
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:55:12 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1211)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1276)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "navbar" %>
+<!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Unravel Blog</h1>
+                            <span class="subheading">Write just about anything under the sun.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                    <%# <a href="post.html">
+                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        </a> %>
+                      <% @articles.each do |article| %>
+                        <%= link_to article.name, article_path(article),class:"post-title"%>
+                        <%= article.body,class:"post-subtitle" %>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Writer</a>
+                            on September 24, 2021
+                        </p>
+                         <!-- Divider-->
+                        <hr class="my-4" />
+                      <% end %>
+                        
+                    </div>
+                   
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+):
+1:    <%= render "navbar" %>
+2:    <!-- Page Header-->
+3:            <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+4:                <div class="container position-relative px-4 px-lg-5">
+5:                    <div class="row gx-4 gx-lg-5 justify-content-center">
+6:                        <div class="col-md-10 col-lg-8 col-xl-7">
+7:                            <div class="site-heading">
+8:                                <h1>Unravel Blog</h1>
+9:                                <span class="subheading">Write just about anything under the sun.</span>
+10:                            </div>
+11:                        </div>
+12:                    </div>
+13:                </div>
+14:            </header>
+15:    <!-- Main Content-->
+16:            <div class="container px-4 px-lg-5">
+17:                <div class="row gx-4 gx-lg-5 justify-content-center">
+18:                    <div class="col-md-10 col-lg-8 col-xl-7">
+19:                        <!-- Post preview-->
+20:                        <div class="post-preview">
+21:                        <%# <a href="post.html">
+22:                                <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+23:                                <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+24:                            </a> %>
+25:                          <% @articles.each do |article| %>
+26:                            <%= link_to article.name, article_path(article),class:"post-title"%>
+27:                            <%= article.body,class:"post-subtitle" %>
+28:                            <p class="post-meta">
+29:                                Posted by
+30:                                <a href="#!">Writer</a>
+31:                                on September 24, 2021
+32:                            </p>
+33:                             <!-- Divider-->
+34:                            <hr class="my-4" />
+35:                          <% end %>
+36:                            
+37:                        </div>
+38:                       
+39:                        <!-- Pager-->
+40:                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+41:                    </div>
+42:                </div>
+43:            </div>
+  
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:55:33 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1211)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1276)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "navbar" %>
+<!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Unravel Blog</h1>
+                            <span class="subheading">Write just about anything under the sun.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                    <%# <a href="post.html">
+                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        </a> %>
+                      <% @articles.each do |article| %>
+                        <%= link_to article.name, article_path(article),class:"post-title"%>
+                        <%= article.body,article,class:"post-subtitle" %>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Writer</a>
+                            on September 24, 2021
+                        </p>
+                         <!-- Divider-->
+                        <hr class="my-4" />
+                      <% end %>
+                        
+                    </div>
+                   
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+):
+1:    <%= render "navbar" %>
+2:    <!-- Page Header-->
+3:            <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+4:                <div class="container position-relative px-4 px-lg-5">
+5:                    <div class="row gx-4 gx-lg-5 justify-content-center">
+6:                        <div class="col-md-10 col-lg-8 col-xl-7">
+7:                            <div class="site-heading">
+8:                                <h1>Unravel Blog</h1>
+9:                                <span class="subheading">Write just about anything under the sun.</span>
+10:                            </div>
+11:                        </div>
+12:                    </div>
+13:                </div>
+14:            </header>
+15:    <!-- Main Content-->
+16:            <div class="container px-4 px-lg-5">
+17:                <div class="row gx-4 gx-lg-5 justify-content-center">
+18:                    <div class="col-md-10 col-lg-8 col-xl-7">
+19:                        <!-- Post preview-->
+20:                        <div class="post-preview">
+21:                        <%# <a href="post.html">
+22:                                <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+23:                                <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+24:                            </a> %>
+25:                          <% @articles.each do |article| %>
+26:                            <%= link_to article.name, article_path(article),class:"post-title"%>
+27:                            <%= article.body,article,class:"post-subtitle" %>
+28:                            <p class="post-meta">
+29:                                Posted by
+30:                                <a href="#!">Writer</a>
+31:                                on September 24, 2021
+32:                            </p>
+33:                             <!-- Divider-->
+34:                            <hr class="my-4" />
+35:                          <% end %>
+36:                            
+37:                        </div>
+38:                       
+39:                        <!-- Pager-->
+40:                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+41:                    </div>
+42:                </div>
+43:            </div>
+  
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+app/views/articles/index.html.erb:27: syntax error, unexpected tLABEL, expecting '='
+Started GET "/articles?class=post-subtitle" for 127.0.0.1 at 2021-07-24 02:55:55 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"class"=>"post-subtitle"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/_navbar.html.erb (Duration: 1.3ms | Allocations: 255)
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1576)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 5779)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 1.6ms | Allocations: 6882)
+
+
