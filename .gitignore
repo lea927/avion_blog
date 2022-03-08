@@ -44,3 +44,6 @@ config/database.yml
 
 /config/credentials/test.key
 .env
+
+# rubocop log file
+/rubocop_log.txt

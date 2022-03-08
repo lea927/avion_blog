@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.3'
+ruby '2.6.6'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
@@ -46,7 +46,8 @@ group :development do
 
   # Solargraph is a Ruby gem that provides intellisense features  
   gem 'solargraph'
-  gem 'rubocop', '~> 1.18', require: false
+  gem 'rubocop', require: false
+  gem 'rubocop-rails'
   gem 'ng-toaster-rails'
 end
 
